@@ -8,7 +8,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
-                sh 'docker build -t myspring-boot:1.0 .'
+                sh 'docker build -f DockerFile -t myspring-boot:1.0 .'
             }
         }
     }
