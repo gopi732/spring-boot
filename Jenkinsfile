@@ -8,8 +8,8 @@ pipeline {
         }
         stage('docker build') {
             steps {
-                sh 'docker build -f Dockerfile -t myspring-boot:1.0 .'
+                sh 'docker-compose build'
             }
         }
-    }
+    }-
 }
