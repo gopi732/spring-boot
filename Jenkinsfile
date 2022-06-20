@@ -11,5 +11,5 @@ pipeline {
                 sh 'docker-compose build'
             }
         }
-    }-
+    }
 }
